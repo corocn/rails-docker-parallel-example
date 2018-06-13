@@ -42,4 +42,4 @@ RUN if [ "$RAILS_ENV" != "development" ]; then rm -rf public/assets && rake asse
 RUN apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /app/log/*
 
-CMD ["rails", "server", "-p", "5000"]
+# CMD ["rails", "server", "-p", "5000"]

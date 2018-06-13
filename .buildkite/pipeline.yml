@@ -4,9 +4,4 @@ steps:
     artifact_paths: "log/**/*"
     env:
       RAILS_ENV: test
-    plugins:
-      docker-compose#v1.3.2:
-        run: app
     parallelism: 20
-    agents:
-      queue: $BUILDKITE_AGENT_META_DATA_QUEUE
